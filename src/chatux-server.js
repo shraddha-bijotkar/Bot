@@ -86,9 +86,14 @@ app.get('/chat', function (req, res) {
             
             msg.push({
                 type: "text",
-                value: "Hello! Choose any one:"
+                value: "Hello! How may I help you?",
+                delayMs: 400 
             });
-            console.log(req.query.text);
+            msg.push({
+                type: "text",
+                value: "Choose any one",
+            });
+            //console.log(req.query.text);
            // menu();
            //function menu(){
         
@@ -102,7 +107,7 @@ app.get('/chat', function (req, res) {
 
             msg.push({
                 type: "option",
-                options: menu
+                options: menu,
             });
         }
        
