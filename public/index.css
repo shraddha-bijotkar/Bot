@@ -1,10 +1,10 @@
 body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     background-color: #050814;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 h1{
-  line-height: 70px;
   font-size: 2.5rem;
   margin: 0px;
   color: #D3D3D3;
@@ -18,19 +18,13 @@ h1{
   margin: 0px;
   padding: 0px;
 }
-.header a {
+.header h1:hover{
   text-decoration: none;
   color: rgba(167, 173, 253, 0.966);
-}
-.header a:hover {
-  color: rgb(121, 118, 128)	;
+  transform: scale(1.2);
+
 }
 
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
 .footer {
   position: fixed;
   left: 0;
@@ -61,41 +55,24 @@ h1{
 
 .bot img:hover{
  transition-property: inherit;
- zoom: 1;
+ z-index: 1;
+ transform: scale(1.2);
 }
 
-/* General CSS Setup */
-body{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 
 /* container */
 .container {
   padding: 2% 2%;
 }
 
-/* CSS talk bubble */
-.talk-bubble {
-	margin: 40px;
-  display: inline-block;
-  position: relative;
-  bottom: 15em;
-	width: 200px;
-	height: auto;
-	background-color: lightyellow;
-}
-.border{
-  border: 8px solid #666;
-}
-.round{
-  border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
 
+.header p{
+  margin: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-weight: 2em!important;
+  line-height: 3em;
 }
 
 
-/*Right triangle, placed bottom left side slightly in*/
-
-
-/* talk bubble contents */
